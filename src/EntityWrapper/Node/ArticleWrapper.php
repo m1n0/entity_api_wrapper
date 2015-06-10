@@ -25,4 +25,13 @@ class ArticleWrapper extends EntityDrupalWrapper {
     $this->nodeWrapper = new EntityDrupalWrapper('node', $nid);
   }
 
+  /**
+   * Gets the Body text.
+   *
+   * @return string
+   *   The text of the body.
+   */
+  public function getBodyText() {
+    return $this->nodeWrapper->field_body->value()['text'];
+  }
 }
