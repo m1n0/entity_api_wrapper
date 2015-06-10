@@ -15,6 +15,12 @@ use \EntityDrupalWrapper;
 class ArticleWrapper extends EntityDrupalWrapper {
   protected $nodeWrapper;
 
+  /**
+   * Initializes a new instance of the ArticleWrapper class.
+   *
+   * @param int $nid
+   *   The node ID to create the wrapper for.
+   */
   public function __construct($nid) {
     $this->nodeWrapper = new EntityDrupalWrapper('node', $nid);
   }
