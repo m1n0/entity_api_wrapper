@@ -1,0 +1,5 @@
+name = entity_class_generator
+description = Generated specific entity classes.
+core = 7.x
+
+dependencies[] = xautoload
