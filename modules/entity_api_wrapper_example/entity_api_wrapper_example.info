@@ -1,0 +1,5 @@
+name = Entity API Wrapper Example
+description = Contains examples how-to use Entity API Wrapper.
+core = 7.x
+
+dependencies[] = entity_api_wrapper
