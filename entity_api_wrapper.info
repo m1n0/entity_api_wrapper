@@ -1,0 +1,6 @@
+name = Entity API Wrapper
+description = Provides wrapper for basic Drupal entities.
+core = 7.x
+
+dependencies[] = xautoload
+dependencies[] = entity

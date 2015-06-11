@@ -1,7 +1,6 @@
-# entity-class-generator
+# Entity API Wrapper
 
-Generates helper classes for entity via drush commands to make development easier and to provide autocomplete and other
-useful functionality for developers.
+Wraps basic Drupal entities for some OOP goodness.
 
 Example usage:
 
