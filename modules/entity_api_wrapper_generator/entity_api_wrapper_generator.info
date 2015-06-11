@@ -1,0 +1,5 @@
+name = Entity API Wrapper Generator
+description = Generates specific wrapper classes.
+core = 7.x
+
+dependencies[] = entity_api_wrapper
