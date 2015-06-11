@@ -4,3 +4,20 @@
  * @file
  * Primarily Drupal hooks and global API functions to manipulate entity_class_generator_example.
  */
+
+
+/**
+ * Implements hook_menu().
+ */
+function entity_api_wrapper_example_menu() {
+  $items ['entity-wrapper-test/%'] = array(
+    'title' => 'Test page for the Entity Class Generator',
+    'page callback' => 'entity_api_wrapper_test_page',
+    'page arguments' => array(1),
+    'access arguments' => array('access content'),
+    'file' => 'includes/entity_api_wrapper.pages.inc',
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
