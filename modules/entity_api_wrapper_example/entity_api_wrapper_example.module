@@ -10,7 +10,7 @@
  * Implements hook_menu().
  */
 function entity_api_wrapper_example_menu() {
-  $items ['entity-wrapper/test/node/%'] = array(
+  $items['entity-wrapper/test/node/%'] = array(
     'title' => 'Test page for the Entity Class Generator - Node',
     'page callback' => 'entity_api_wrapper_node_test_page',
     'page arguments' => array(3),
@@ -19,7 +19,7 @@ function entity_api_wrapper_example_menu() {
     'type' => MENU_CALLBACK,
   );
 
-  $items ['entity-wrapper/test/user/%'] = array(
+  $items['entity-wrapper/test/user/%'] = array(
     'title' => 'Test page for the Entity Class Generator - User',
     'page callback' => 'entity_api_wrapper_user_test_page',
     'page arguments' => array(3),
