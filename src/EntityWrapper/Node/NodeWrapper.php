@@ -48,7 +48,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getVid() {
-    return $this->nodeWrapper->vid;
+    return $this->nodeWrapper->vid->value();
   }
 
   public function setVid($vid) {
@@ -56,7 +56,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getUid() {
-    return $this->nodeWrapper->uid;
+    return $this->nodeWrapper->uid->value();
   }
 
   public function setUid($uid) {
@@ -64,7 +64,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getTitle() {
-    return $this->nodeWrapper->title;
+    return $this->nodeWrapper->title->value();
   }
 
   public function setTitle($title) {
@@ -72,7 +72,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getLog() {
-    return $this->nodeWrapper->log;
+    return $this->nodeWrapper->log->value();
   }
 
   public function setLog($log) {
@@ -80,7 +80,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getStatus() {
-    return $this->nodeWrapper->status;
+    return $this->nodeWrapper->status->value();
   }
 
   public function setStatus($status) {
@@ -88,7 +88,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getComment() {
-    return $this->nodeWrapper->comment;
+    return $this->nodeWrapper->comment->value();
   }
 
   public function setComment($comment) {
@@ -96,7 +96,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getPromote() {
-    return $this->nodeWrapper->promote;
+    return $this->nodeWrapper->promote->value();
   }
 
   public function setPromote($promote) {
@@ -104,7 +104,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getSticky() {
-    return $this->nodeWrapper->sticky;
+    return $this->nodeWrapper->sticky->value();
   }
 
   public function setSticky($sticky) {
@@ -112,7 +112,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getNid() {
-    return $this->nodeWrapper->nid;
+    return $this->nodeWrapper->nid->value();
   }
 
   public function setNid($nid) {
@@ -120,7 +120,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getType() {
-    return $this->nodeWrapper->type;
+    return $this->nodeWrapper->type->value();
   }
 
   public function setType($type) {
@@ -128,7 +128,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getLanguage() {
-    return $this->nodeWrapper->language;
+    return $this->nodeWrapper->language->value();
   }
 
   public function setLanguage($language) {
@@ -136,7 +136,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getCreated() {
-    return $this->nodeWrapper->created;
+    return $this->nodeWrapper->created->value();
   }
 
   public function setCreated($created) {
@@ -144,7 +144,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getChanged() {
-    return $this->nodeWrapper->changed;
+    return $this->nodeWrapper->changed->value();
   }
 
   public function setChanged($changed) {
@@ -152,7 +152,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getTnid() {
-    return $this->nodeWrapper->tnid;
+    return $this->nodeWrapper->tnid->value();
   }
 
   public function setTnid($tnid) {
@@ -160,7 +160,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getTranslate() {
-    return $this->nodeWrapper->translate;
+    return $this->nodeWrapper->translate->value();
   }
 
   public function setTranslate($translate) {
@@ -168,7 +168,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getRevisionTimestamp() {
-    return $this->nodeWrapper->revisionTimestamp;
+    return $this->nodeWrapper->revisionTimestamp->value();
   }
 
   public function setRevisionTimestamp($revisionTimestamp) {
@@ -176,7 +176,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getRevisionUid() {
-    return $this->nodeWrapper->revisionUid;
+    return $this->nodeWrapper->revisionUid->value();
   }
 
   public function setRevisionUid($revisionUid) {
@@ -184,7 +184,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getCid() {
-    return $this->nodeWrapper->cid;
+    return $this->nodeWrapper->cid->value();
   }
 
   public function setCid($cid) {
@@ -192,7 +192,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getLastCommentTimestamp() {
-    return $this->nodeWrapper->las_comment_timestamp;
+    return $this->nodeWrapper->las_comment_timestamp->value();
   }
 
   public function setLastCommentTimestamp($lastCommentTimestamp) {
@@ -200,7 +200,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getLastCommentName() {
-    return $this->nodeWrapper->lastCommentName;
+    return $this->nodeWrapper->lastCommentName->value();
   }
 
   public function setLastCommentName($lastCommentName) {
@@ -208,7 +208,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getLastCommentUid() {
-    return $this->nodeWrapper->lastCommentUid;
+    return $this->nodeWrapper->lastCommentUid->value();
   }
 
   public function setLastCommentUid($lastCommentUid) {
@@ -216,7 +216,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getCommentCount() {
-    return $this->nodeWrapper->commentCount;
+    return $this->nodeWrapper->commentCount->value();
   }
 
   public function setCommentCount($commentCount) {
@@ -224,7 +224,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getName() {
-    return $this->nodeWrapper->name;
+    return $this->nodeWrapper->name->value();
   }
 
   public function setName($name) {
@@ -232,7 +232,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getPicture() {
-    return $this->nodeWrapper->picture;
+    return $this->nodeWrapper->picture->value();
   }
 
   public function setPicture($picture) {
@@ -240,7 +240,7 @@ abstract class NodeWrapper extends EntityDrupalWrapper {
   }
 
   public function getData() {
-    return $this->nodeWrapper->data;
+    return $this->nodeWrapper->data->value();
   }
 
   public function setData($data) {
