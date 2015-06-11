@@ -7,13 +7,12 @@
 
 namespace Drupal\entity_api_wrapper_example\EntityWrapper\Node;
 
-use \EntityDrupalWrapper;
+use \Drupal\entity_api_wrapper\EntityWrapper\Node\NodeWrapper;
 
 /**
  * Wraps nodes of type article with additional functionality.
  */
-class ArticleWrapper extends EntityDrupalWrapper {
-  protected $nodeWrapper;
+class ArticleWrapper extends NodeWrapper {
 
   /**
    * Initializes a new instance of the ArticleWrapper class.
@@ -22,7 +21,7 @@ class ArticleWrapper extends EntityDrupalWrapper {
    *   The node ID to create the wrapper for.
    */
   public function __construct($nid) {
-    $this->nodeWrapper = new EntityDrupalWrapper('node', $nid);
+    parent::__construct($nid);
   }
 
   /**

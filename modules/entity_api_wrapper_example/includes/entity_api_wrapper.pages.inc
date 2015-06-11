@@ -11,7 +11,8 @@ function entity_api_wrapper_test_page($id) {
   $output = '';
   $test = new ArticleWrapper($id);
   // This returns body of the article.
-  $output .= $test->getBodyText();
+  $output .= '<H2>' . $test->getTitle() . '</H2>';
+  $output .= '<div>' . $test->getBodyText() . '</div>';
 
   return $output;
 }
