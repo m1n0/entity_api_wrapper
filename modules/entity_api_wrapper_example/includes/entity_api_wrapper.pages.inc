@@ -6,6 +6,7 @@
  */
 
 use Drupal\entity_api_wrapper_example\EntityWrapper\Node\ArticleWrapper;
+use Drupal\entity_api_wrapper\EntityWrapper\User\UserWrapper;
 
 /**
  * Page callback for the node testing page.
@@ -38,6 +39,10 @@ function entity_api_wrapper_node_test_page($id) {
  */
 function entity_api_wrapper_user_test_page($id) {
   $output = '';
+
+  $test = new UserWrapper($id);
+  $output .= '<H2>' . $test->getName() . '</H2>';
+  $output .= '<div>' . $test->getMail() . '</div>';
 
   return $output;
 }
