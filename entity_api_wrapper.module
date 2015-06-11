@@ -1,7 +1,6 @@
 <?php
 
-use Drupal\entity_class_generator\EntityWrapper\Node\ArticleWrapper;
-
-$test = new ArticleWrapper(1);
-// This returns body of the article.
-$test->getBodyText();
+/**
+ * @file
+ * Primarily Drupal hooks and global API functions to manipulate entity_class_generator.
+ */
