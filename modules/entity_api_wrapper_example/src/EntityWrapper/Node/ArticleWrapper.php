@@ -5,7 +5,7 @@
  * Article wrapper class.
  */
 
-namespace Drupal\entity_class_generator\EntityWrapper\Node;
+namespace Drupal\entity_api_wrapper_example\EntityWrapper\Node;
 
 use \EntityDrupalWrapper;
 
@@ -32,6 +32,6 @@ class ArticleWrapper extends EntityDrupalWrapper {
    *   The text of the body.
    */
   public function getBodyText() {
-    return $this->nodeWrapper->field_body->value()['text'];
+    return $this->nodeWrapper->body->value()['value'];
   }
 }
