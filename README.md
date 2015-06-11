@@ -14,3 +14,21 @@ $test = new ArticleWrapper(1);
 $test->getBodyText();
 ?>
 ```
+
+# Contribution Rules
+
+## Commit Messages
+
+Commit message starts with text `Issue` followed by issue number
+prepended by hashtag character (`#`). The issue number is followed by
+hyphen and actual commit message.
+
+_Example:_
+
+```
+"Issue #1 - initial commit."
+"Issue #2 - added xautoload dependency."
+"Issue #3 - multiple minor changes:
+- updated README.md file,
+- added submodule folder."
+```
