@@ -3,3 +3,25 @@ description = Contains examples how-to use Entity API Wrapper.
 core = 7.x
 
 dependencies[] = entity_api_wrapper
+dependencies[] = features
+dependencies[] = file
+dependencies[] = image
+dependencies[] = node_reference
+dependencies[] = taxonomy
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = field_article_file
+features[field_base][] = field_article_image
+features[field_base][] = field_article_reference
+features[field_base][] = field_article_tags
+features[field_base][] = field_article_text
+features[field_instance][] = node-article-body
+features[field_instance][] = node-article-field_article_file
+features[field_instance][] = node-article-field_article_image
+features[field_instance][] = node-article-field_article_reference
+features[field_instance][] = node-article-field_article_tags
+features[field_instance][] = node-article-field_article_text
+features[node][] = article
+features[taxonomy][] = tags
+

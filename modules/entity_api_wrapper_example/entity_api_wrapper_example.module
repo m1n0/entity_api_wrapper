@@ -5,6 +5,7 @@
  * Primarily Drupal hooks and global API functions to manipulate entity_class_generator_example.
  */
 
+include_once 'entity_api_wrapper_example.features.inc';
 
 /**
  * Implements hook_menu().
