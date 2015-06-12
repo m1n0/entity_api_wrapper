@@ -2,5 +2,8 @@
 
 /**
  * @file
- * Primarily Drupal hooks and global API functions to manipulate entity_class_generator.
+ * Entity API Wrapper - module file.
+ *
+ * Primarily Drupal hooks and global API functions to manipulate
+ * entity_class_generator.
  */
