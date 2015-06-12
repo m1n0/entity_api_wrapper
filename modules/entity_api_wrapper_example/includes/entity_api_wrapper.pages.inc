@@ -25,9 +25,16 @@ function entity_api_wrapper_node_test_page($id) {
   $output .= '<H2>' . $test->getTitle() . '</H2>';
   $output .= '<div>' . $test->getBodyText() . '</div>';
 
+  $output .= "<h3>Field `" . $test->getArticleText()->getMachineName() . "` (" . $test->getArticleText()->getLabel() . ').</h3>';
+  $output .= '<ul>';
+  $output .= '<li><strong>toString:</strong> ' . $test->getArticleText() . '</li>';
+  $output .= '<li><strong>label:</strong> ' . $test->getArticleText()->getLabel() . '</li>';
+  $output .= '<li><strong>required:</strong> ' . $test->getArticleText()->isRequired() . '</li>';
+  $output .= '<li><strong>value:</strong> ' . $test->getArticleText()->getValue() . '</li>';
+  $output .= '</ul>';
+
   return $output;
 }
-
 /**
  * Page callback for the user testing page.
  *

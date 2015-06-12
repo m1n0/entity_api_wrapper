@@ -6,6 +6,7 @@ dependencies[] = entity_api_wrapper
 dependencies[] = features
 dependencies[] = file
 dependencies[] = image
+dependencies[] = references
 dependencies[] = node_reference
 dependencies[] = taxonomy
 dependencies[] = text
@@ -24,4 +25,3 @@ features[field_instance][] = node-article-field_article_tags
 features[field_instance][] = node-article-field_article_text
 features[node][] = article
 features[taxonomy][] = tags
-
