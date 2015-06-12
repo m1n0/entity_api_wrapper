@@ -58,6 +58,16 @@ class TextFieldWrapper extends BaseFieldWrapper {
   }
 
   /**
+   * Returns machine name of the field.
+   *
+   * @return string
+   *   Field machine name.
+   */
+  public function getMachineName() {
+    return $this->valueWrapper->info()['name'];
+  }
+
+  /**
    * String representation of the text field value.
    *
    * @return string
