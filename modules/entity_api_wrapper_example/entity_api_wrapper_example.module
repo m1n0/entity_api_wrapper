@@ -12,7 +12,7 @@ include_once 'entity_api_wrapper_example.features.inc';
  */
 function entity_api_wrapper_example_menu() {
   $items['entity-wrapper/test/node/%'] = array(
-    'title' => 'Test page for the Entity Class Generator - Node',
+    'title' => 'Test page for the Entity API Wrapper - Node',
     'page callback' => 'entity_api_wrapper_node_test_page',
     'page arguments' => array(3),
     'access arguments' => array('access content'),
@@ -21,7 +21,7 @@ function entity_api_wrapper_example_menu() {
   );
 
   $items['entity-wrapper/test/user/%'] = array(
-    'title' => 'Test page for the Entity Class Generator - User',
+    'title' => 'Test page for the Entity API Wrapper - User',
     'page callback' => 'entity_api_wrapper_user_test_page',
     'page arguments' => array(3),
     'access arguments' => array('access content'),
