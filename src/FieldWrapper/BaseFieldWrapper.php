@@ -39,8 +39,6 @@ abstract class BaseFieldWrapper {
   /**
    * Returns field label.
    *
-   * @TODO: This could possibly go to the base class.
-   *
    * @return string
    *   Field label.
    */
@@ -60,7 +58,7 @@ abstract class BaseFieldWrapper {
   }
 
   /**
-   * Returns string value if the text field.
+   * Returns general value of the field, might need to be overridden.
    *
    * @return string
    *   String value.
