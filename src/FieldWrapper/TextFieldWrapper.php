@@ -25,49 +25,6 @@ class TextFieldWrapper extends BaseFieldWrapper {
   }
 
   /**
-   * Returns field label.
-   *
-   * @TODO: This could possibly go to the base class.
-   *
-   * @return string
-   *   Field label.
-   */
-  public function getLabel() {
-    // Label is mandatory, so we don't need to do additional checking.
-    return $this->valueWrapper->info()['label'];
-  }
-
-  /**
-   * Returns whether a field is required.
-   *
-   * @return bool
-   *   Required flag.
-   */
-  public function isRequired() {
-    return $this->valueWrapper->info()['required'];
-  }
-
-  /**
-   * Returns string value if the text field.
-   *
-   * @return string
-   *   String value.
-   */
-  public function getValue() {
-    return $this->valueWrapper->value();
-  }
-
-  /**
-   * Returns machine name of the field.
-   *
-   * @return string
-   *   Field machine name.
-   */
-  public function getMachineName() {
-    return $this->valueWrapper->info()['name'];
-  }
-
-  /**
    * String representation of the text field value.
    *
    * @return string
